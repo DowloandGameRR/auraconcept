@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <input
+      id="password"
+      type="password"
+      placeholder="Şifre"
+      style="
+      width:100%;
+      margin-top:30px;
+      padding:18px;
+      border-radius:16px;
+      border:none;
+      background:rgba(255,255,255,0.1);
+      color:white;
+      "
+    >
+
+    <button
+      onclick="login()"
+      style="width:100%;margin-top:20px;"
+    >
+      Giriş Yap
+    </button>
+
+  </div>
+
+</section>
+
+<script>
+
+function login(){
+
+  const password = document.getElementById('password').value
+
+  if(password === '16153015Aa.'){
+
+    document.body.innerHTML = `
+
+    <section style="padding:60px;">
+
+      <h1 style="font-size:56px;margin-bottom:40px;">
+        Aura Admin Panel
+      </h1>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Ana Başlık</h3>
+          <textarea style="width:100%;height:120px;"></textarea>
+        </div>
+
+        <div class="card">
+          <h3>İletişim Numarası</h3>
+          <input style="width:100%;padding:16px;">
+        </div>
+
+        <div class="card">
+          <h3>Galeri Fotoğrafları</h3>
+          <input type="file" multiple>
+        </div>
+
+      </div>
+
+    </section>
+
+    `
+
+  }else{
+    alert('Şifre yanlış')
+  }
+
+}
+
+</script>
+
+</body>
+</html>
